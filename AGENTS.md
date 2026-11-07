@@ -1409,3 +1409,13 @@ test('windowsHide defaults to true on Windows, is left alone elsewhere', () => {
 If the logic lives inline in a god-file (`main.ts`, `cli.py`,
 `gateway/run.py`) and extracting it feels disruptive: that's the actual
 signal to do the extraction, not to regex around it.
+
+## GitHub Actions are forbidden
+
+Do not add, restore, enable, or run GitHub Actions workflows in this repository.
+Do not create workflow files under `.github/workflows/`, configure GitHub-hosted
+or self-hosted Actions runners, or introduce automation that generates or restores
+workflows. Keep repository Actions disabled wherever settings access permits.
+Use the existing approved development compute, testing, and deployment tools.
+This rule applies to every branch and supersedes older instructions recommending
+GitHub Actions. Only an explicit instruction from the owner can change this policy.
